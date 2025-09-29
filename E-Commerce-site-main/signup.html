@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <a href="index.html" class="logo">INTERN</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Product</a>
+            <a href="collection.html">Collection</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+
+    <div id="signupForm" class="form">
+        <h2> sign-up</h2>
+        <input type="text" id="name" placeholder="Enter your complete name" required>
+        <input type="email" id="email" placeholder="abc@gmail.com" required>
+        <input type="password" id="password" placeholder="enter you pssword" required>
+        <div class="btn">
+            <button type="button" onclick= validateForm()>Continue</button>
+        </div>
+        
+            <p><b>already have an Account</b></p>
+        <div class="form-footer btn">
+            <a href="signin.html">
+                <button type="button">Sign-in</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+  <footer>
+    <div class="footer-left">
+      © 2025 Intern™. All Rights Reserved.
+    </div>
+    <div class="footer-right">
+      <a href="#">About</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Licensing</a>
+      <a href="signup.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<!-- <script>
+    function validateForm() {
+      let inputs = document.querySelectorAll("#signupForm input");
+      let valid = true;
+
+      inputs.forEach(input => {
+        if (input.value.trim() === "") {
+          input.classList.add("error");
+          valid = false;
+          setTimeout(() => input.classList.remove("error"), 500); // shake ke baad hatao
+        }
+      });
+
+      if (valid) {
+        alert("User signed up");
+      }
+    }
+  </script> -->
+</body>
+</html>
